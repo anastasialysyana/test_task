@@ -1,6 +1,4 @@
-// Body Styles
-body,
-html,
+
 .body {
   background: #f3f3f3;
 
@@ -20,7 +18,12 @@ html,
 .separator {
   border: 0;
   height: 2px;
+  background-color: #a3a3a3;
+}
 
+.separator-sm {
+  border: 0;
+  height: 2px;
   background-color: #a3a3a3;
 }
 
@@ -32,7 +35,7 @@ html,
 
 .vertical-line {
   border: 0;
-  height: 130px;
+  height: 155px;
   width: 1px;
   background-color: #a3a3a3;
 }
@@ -81,7 +84,8 @@ html,
 //media-queries
 
 
-@media only screen and (max-width: 699px) {
+@media only screen and (max-width: 700px) {
+
   .vertical-line {
     display: none;
   }
@@ -99,7 +103,37 @@ html,
   }
 
   .content-img {
-    padding: 5px;
+    padding-top: 20px;
+  }
+
+  .container-quote {
+    font-size: 24px;
+    font-family: Impact, Charcoal, sans-serif;;
+  }
+
+  .container-quote-author {
+    font-size: 16px;
+    font-family: 'Lucida Console', Monaco, monospace;
+  }
+
+  .footer-contact {
+    font-family: 'MS Sans Serif', Geneva, sans-serif;
+  }
+
+  .footer-contact > a {
+    font-family: 'MS Sans Serif', Geneva, sans-serif;
+  }
+
+  .header-description {
+    font-family: 'MS Sans Serif', Geneva, sans-serif;
+  }
+
+  .header-text {
+    font-family: Impact, Charcoal, sans-serif;;
+  }
+
+  .separator-sm {
+    display: none;
   }
 }
 
