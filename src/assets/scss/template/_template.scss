@@ -1,59 +1,107 @@
-// These are the styles to make some of the templates look extra nice.
-// Feel free to remove these styles for production!
-
-// Body Styles 
+// Body Styles
 body,
-html, 
+html,
 .body {
-  background: #f3f3f3 !important;
+  background: #f3f3f3;
+
 }
 
 .container.header {
-  background: #f3f3f3;
+  background: #e8f1f4;
+  h4 {
+    color: #464648;
+  }
 }
 
-.body-drip {
-  border-top: 8px solid #663399;
+.description {
+  color: #464648;
 }
 
-// Full Width Headers
-.header {
-  background: #8a8a8a;
+.separator {
+  border: 0;
+  height: 2px;
+
+  background-color: #a3a3a3;
 }
 
-.header .columns {
-  padding-bottom: 0;
+.header-description {
+  font-family: 'MS Sans Serif', Geneva, sans-serif;
+  font-style: italic;
+  font-size: 18px;
 }
 
-.header p {
-  color: #fff;
-  padding-top: 15px;
+.vertical-line {
+  border: 0;
+  height: 130px;
+  width: 1px;
+  background-color: #a3a3a3;
 }
 
-.header .wrapper-inner {
-  padding: 20px;
+.content-img > img{
+  height: 200px;
+  padding-left: 16px;
 }
 
-.header .container {
-  background: transparent;
+.footer-contact > a{
+   font-family: 'MS Sans Serif', Geneva, sans-serif;
+   font-style: italic;
+   font-size: 18px;
+ }
+
+.footer-contact {
+  font-family: 'MS Sans Serif', Geneva, sans-serif;
+  font-style: italic;
+  font-size: 18px;
 }
 
-// Social Media
-table.button.facebook table td {
-  background: #3B5998 !important;
-  border-color: #3B5998;
+.container-quote {
+  font-size: 41px;
+  color: #464648
 }
 
-table.button.twitter table td {
-  background: #1daced !important;
-  border-color: #1daced;
+.container-quote-author {
+  font-family: 'Lucida Console', Monaco, monospace;
+  font-style: italic;
+  color: #929292;
+  padding-right: 50px;
 }
 
-table.button.google table td {
-  background: #DB4A39 !important;
-  border-color: #DB4A39;
+.contact-text {
+  color: #464648
 }
 
-.wrapper.secondary {
-  background: #f3f3f3;
+.separator-hidden {
+  display: none;
+  border: 0;
+  height: 2px;
+
+  background-color: #a3a3a3;
 }
+
+//media-queries
+
+
+@media only screen and (max-width: 699px) {
+  .vertical-line {
+    display: none;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .header-description {
+    text-align: center;
+  }
+
+  .separator-hidden {
+    display: block;
+  }
+
+  .content-img {
+    padding: 5px;
+  }
+}
+
+
+
